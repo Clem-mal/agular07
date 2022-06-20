@@ -1,0 +1,9 @@
+
+<!-- <img src={{clement.skills[1].logo}}>
+<img src={{clement.skills[0].logo}}>
+<img src={{clement.skills[2].logo}}>/ -->
+<ul>
+  <li *ngFor="let skillsList of clement.skills">
+     <img src={{skillsList.logo}}/>
+  </li>
+</ul>
