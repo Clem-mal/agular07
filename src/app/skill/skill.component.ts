@@ -8,18 +8,13 @@ import { Skill } from '../models/skill.model';
   styleUrls: ['./skill.component.scss']
 })
 export class SkillComponent implements OnInit {
-  @Input() clement: Developer = new Developer(
-    "", "", 30, "", "",
-     [
-     new Skill ("", "", ""),
-     new Skill ("", "", ""),
-     new Skill ("", "", "")
-     ]
-  );
+
+  @Input()
+  skills: Skill = new Skill("","","");
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.clement)
+
   }
 
 

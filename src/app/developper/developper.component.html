@@ -3,6 +3,11 @@
 <h3>Genre : {{Clement.sexe}}</h3>
 
 <h3>compétences : </h3>
-<app-skill
-  [clement] = "Clement"
-></app-skill>
+
+
+<div *ngFor="let skill of Clement.skills">
+  <app-skill  [skills]="skill"></app-skill>
+</div>
+
+<!--
+<h2>{{Gerard.lastname}} {{Gerard.firstname}}</h2> -->
